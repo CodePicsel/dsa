@@ -1,0 +1,15 @@
+E:\shashank\dsa\arrays\c#\ArrayManu1\bin\Debug\net8.0\ArrayManu1.exe
+E:\shashank\dsa\arrays\c#\ArrayManu1\bin\Debug\net8.0\ArrayManu1.deps.json
+E:\shashank\dsa\arrays\c#\ArrayManu1\bin\Debug\net8.0\ArrayManu1.runtimeconfig.json
+E:\shashank\dsa\arrays\c#\ArrayManu1\bin\Debug\net8.0\ArrayManu1.dll
+E:\shashank\dsa\arrays\c#\ArrayManu1\bin\Debug\net8.0\ArrayManu1.pdb
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.GeneratedMSBuildEditorConfig.editorconfig
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.AssemblyInfoInputs.cache
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.AssemblyInfo.cs
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.csproj.CoreCompileInputs.cache
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.sourcelink.json
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.dll
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\refint\ArrayManu1.dll
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.pdb
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ArrayManu1.genruntimeconfig.cache
+E:\shashank\dsa\arrays\c#\ArrayManu1\obj\Debug\net8.0\ref\ArrayManu1.dll
