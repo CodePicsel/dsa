@@ -1,5 +1,5 @@
 class ArrayManu1{
     public static void main(String []args){
-        System.out.println("Hello World");
+        int[] nums={1,2,3,4,5};
     }
 }

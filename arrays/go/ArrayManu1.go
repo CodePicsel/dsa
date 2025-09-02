@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Print("Hello World!")
+	nums:=[]int{1,2,3,4,5}
+	fmt.Println(nums)
 }
