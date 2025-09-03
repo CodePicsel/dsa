@@ -1,3 +1,5 @@
+
+#Rotating Array by 1 Place...
 nums =[1,2,3,4,5]
 initial =nums[0]
 for i in range(len(nums)):
@@ -5,9 +7,9 @@ for i in range(len(nums)):
         nums[i]=nums[i+1]
     else:
         nums[len(nums)-1]=initial
-print(nums)
+# print(nums)
 
-#Pythonic Way
+#Pythonic Rotating Array by 1 Place...
 nums = [1,2,3,4,5]
 nums = nums[1:] + nums[:1]
 print(nums)

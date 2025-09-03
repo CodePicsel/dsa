@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\shashank\\dsa\\arrays\\c#\\ArrayManu1\\ArrayManu1.csproj": {}
+    "E:\\shashank\\dsa\\arrays\\csharp\\ArrayManu1\\ArrayManu1.csproj": {}
   },
   "projects": {
-    "E:\\shashank\\dsa\\arrays\\c#\\ArrayManu1\\ArrayManu1.csproj": {
+    "E:\\shashank\\dsa\\arrays\\csharp\\ArrayManu1\\ArrayManu1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\shashank\\dsa\\arrays\\c#\\ArrayManu1\\ArrayManu1.csproj",
+        "projectUniqueName": "E:\\shashank\\dsa\\arrays\\csharp\\ArrayManu1\\ArrayManu1.csproj",
         "projectName": "ArrayManu1",
-        "projectPath": "E:\\shashank\\dsa\\arrays\\c#\\ArrayManu1\\ArrayManu1.csproj",
+        "projectPath": "E:\\shashank\\dsa\\arrays\\csharp\\ArrayManu1\\ArrayManu1.csproj",
         "packagesPath": "C:\\Users\\PASKAL\\.nuget\\packages\\",
-        "outputPath": "E:\\shashank\\dsa\\arrays\\c#\\ArrayManu1\\obj\\",
+        "outputPath": "E:\\shashank\\dsa\\arrays\\csharp\\ArrayManu1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
