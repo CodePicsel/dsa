@@ -9,8 +9,8 @@ class ArrayManu1{
         // am.rotationBy1Places(nums);
 
         //Rotating Array by D places
-        // am.rotationByDPlaces(d, nums);
-        am.spaceOptimalRotationByDPlaces(d, nums);
+        am.rotationByDPlaces(d, nums);
+        // am.spaceOptimalRotationByDPlaces(d, nums);
 
     }
 
@@ -24,20 +24,17 @@ class ArrayManu1{
     }
 
     void rotationByDPlaces(int d, int[] nums){
+        int n = nums.length;
+        if (n <= 1) return;
+        d %= n;
         int[] temps=new int[d];
-        for(int i=0;i<d;i++){
-            temps[i]=nums[i];
-        }
-        for(int i=d; i<nums.length;i++){
-            nums[i-d]=nums[i];
-        }
-        for(int i=0;i<d;i++){
-            nums[d+1+i]=temps[i];
-        }
+        for(int i=0;i<d;i++) temps[i]=nums[i];
+        for(int i=d; i<nums.length;i++) nums[i-d]=nums[i];
+        for (int i = 0; i < d; i++) nums[n - d + i] = temps[i];
         System.out.println(java.util.Arrays.toString(nums)); 
     }
 
-    void spaceOptimalrotationByDPlaces(int d, int[] nums){
+    void spaceOptimalRotationByDPlaces(int d, int[] nums){
     //no readymade reverse function for arrays in java
         nums = reverse(nums, 0, d-1);
         nums = reverse(nums, d, nums.length-1);
