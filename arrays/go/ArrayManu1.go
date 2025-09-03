@@ -11,7 +11,7 @@ func main(){
 	rotateBy1(nums)
 }       
 
-func rotateBy1(){
+func rotateBy1(nums []int){
 	initial:=nums[0]
 	for i := range nums {
 		if i+1<len(nums){
