@@ -14,7 +14,7 @@ class ArrayManu1{
 
     }
 
-    void rotationBy1Places(int[] nums){
+    void rotationBy1Place(int[] nums){
         int initial = nums[0];
         for(int i=0;i<nums.length; i++){
             if(i+1<nums.length)nums[i]=nums[i+1];
