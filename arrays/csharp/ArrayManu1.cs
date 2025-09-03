@@ -5,9 +5,12 @@ class ArrayManu1
     public static void Main(string[] args)
     {
         int[] nums = { 1, 2, 3, 4, 5 };
-        
+        int d=2;
         //Rotating Array by 1 Place...
         RotateBy1(nums);
+        
+        //Rotating Array by D Place...
+        RotateByD(d, nums);
     }
 
     void RotateBy1(int[] nums){
@@ -18,6 +21,10 @@ class ArrayManu1
             else nums[nums.Length - 1] = initial;
         }
         foreach (int i in nums) Console.WriteLine(i);
+    }
+
+    void RotateByD(int d, int[] nums){
+        
     }
 
 }
