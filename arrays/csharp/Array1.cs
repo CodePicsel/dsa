@@ -1,6 +1,6 @@
 using System;
 
-class ArrayManu1
+class Array1
 {
     public static void Main(string[] args)
     {
