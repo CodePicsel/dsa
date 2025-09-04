@@ -29,3 +29,17 @@ func splitSum(n int) (even, odd int) {
    return // returns even, odd
 }
 
+/////////////////////////////////**        Arrays And Slice         */////////////////////////////////////////
+
+/* --> Arrays: Fixed Size      */
+
+arr:=[]int{1,2,3,1,2,3} //defining
+
+n:=len(arr)//for length
+
+/* --> Slice: Dynamic Sizing    */
+
+s:=make([]int, 2, 3)//make takes two-three args (type, start, capacity) or (type, capacity)
+s=append(s, 2) //adds element "2" at the end of slice
+
+
