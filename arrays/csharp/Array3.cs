@@ -1,10 +1,11 @@
-﻿
+public class Array3{
+    public static void Main(string []args){
         int[] arr1={1,1,2,3,4,5};
 	    int[] arr2={2,3,4,4,5,6};
 	    UnionOfArray(arr1, arr2);
-    
+    }
 
-     void UnionOfArray(int[] arr1,int[] arr2){
+    void UnionOfArray(int[] arr1,int[] arr2){
         int n1 = arr1.Length;
         int n2 = arr2.Length;
         List<int> union = new List<int>();
@@ -27,5 +28,6 @@
             if(union.Count==0 || union[union.Count-1]!=arr2[j]) union.Add(arr2[j]);
             j++;
         }
-        foreach(int k in union)Console.WriteLine(k);
+    }
+
 }
