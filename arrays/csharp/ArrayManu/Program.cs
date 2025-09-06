@@ -1,19 +1,16 @@
-﻿
-        int[] arr1={1, 2, 2, 3, 4, 5};
-	    int[] arr2={2, 2, 4, 6, 8}; // o/p: 2, 4
-        IntersectionOfArrays(arr1, arr2);
-    
+﻿var dict = new Dictionary<string, int>();
+        
+        //Two types of insertion methods...
+        dict.Add("apple", 3);
+        dict["banana"] = 5;
 
-    void IntersectionOfArrays(int[] arr1, int[] arr2){
-        int n1=arr1.Length, n2=arr2.Length;
-        List<int> intersection = new List<int>();
-        int i=0, j=0;
-        while(i<n1){
-            if(arr1[i]==arr2[j]){
-                intersection.Add(arr1[i]);
-                i++; j++;
-            }else if(arr1[i]<arr2[j]) i++;
-            else j++;
-        }
-        foreach(int k in intersection) Console.WriteLine(k);
-    }
+        //Contains and count...
+        Console.WriteLine(dict.ContainsKey("banana")); // true
+        Console.WriteLine(dict.Count); // 2
+
+        //Printing Style...
+         foreach (var kvp in dict) Console.WriteLine($"{kvp.Key} => {kvp.Value}");
+
+         //Remove & Clear function...
+          dict.Remove("apple");
+          dict.Clear();
