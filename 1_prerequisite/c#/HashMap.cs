@@ -18,7 +18,9 @@ Clear: dict.Clear()
 class HashMap{
     public static void main(String []args){
 
-
+        //Defining Dictionary as Hashmap in Csharp....
+        var dict = new Dictionary<string,int>();
+        
         //Two types of insertion methods...
         dict.Add("apple", 3);
         dict["banana"] = 5;
