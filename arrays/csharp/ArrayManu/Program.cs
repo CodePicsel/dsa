@@ -1,28 +1,33 @@
-﻿
-        int[] arr={1, 1, 2, 3, 3, 4, 4, 5, 5};
-        MissingInTwice(arr);
-    
-    void MissingInTwice(int[] arr){
-        var dict = new Dictionary<int, int>();
-        int n = arr.Length;
-        // Console.WriteLine(dict.ContainsValue(0));
-        for(int i = 0; i<n; i++){
-            int key = arr[i];
-            int temp=0;
-            if(dict.ContainsKey(key)){
-                dict.TryGetValue(key, out temp);
-                temp++;
-                dict[key] = temp;
-            }else{
-                dict.Add(key, 1);
-            }
-        }
-foreach (var kvp in dict) {
-            //  Console.WriteLine($"{kvp.Key} => {kvp.Value}");
-            if(kvp.Value==1){
-                Console.WriteLine(kvp.Key);
-                break;
-            }
-         }
-             }
+﻿int[] arr = {1,2,3,4,5};
 
+//4444444
+//4333334
+//4322234
+//4321234
+//4322234
+//4333334
+//4444444
+
+//555555555
+//544444445
+//543333345
+//543222345
+//543212345
+//543222345
+//543333345
+//544444445
+//555555555
+
+        int n = arr.Length;
+        int size = 2 * n - 1;         // 7 when n = 4
+        int center = n - 1;           // center index (0-based)
+
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++)
+            {
+                int dist = Math.Max(Math.Abs(i - center), Math.Abs(j - center));
+                Console.Write(arr[dist]);
+            }
+            Console.WriteLine();
+        }

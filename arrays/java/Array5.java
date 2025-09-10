@@ -5,6 +5,7 @@ public class Array5{
     public static void main(String []args){
         int[] arr={1, 1, 2, 3, 3, 4, 4, 5, 5};
         missingInTwice(arr);
+        missingInTwiceOptimal(arr);
     }
 
     static void missingInTwice(int[] arr){
@@ -28,11 +29,19 @@ public class Array5{
                 break; //Dont use Break For multiple Missing Twins
             } 
         }
-        //O(n)
+        //O(n/2)
 
 
-        //Total time Complexity: O(n)+O(n) = O(2n)
+        //Total time Complexity: O(n)+O(n/2) = O(2n)
         //Total space Complexity: O(n)
-    }
 
+    }
+        //-------- Optimal Solution --------//
+    static void missingInTwiceOptimal(int[] arr){
+        int xorr=0;
+        for(int i = 0; i<arr.length; i++){
+            xorr=xorr^arr[i];
+        }
+        System.out.println(xorr);
+    }
 }

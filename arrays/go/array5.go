@@ -2,9 +2,23 @@ package main
 
 import "fmt"
 
+// 1^1=0
+// 0^0=0
+// 1^0=1
+
 func main(){
 	arr:=[]int{1,1,2,3,3,4,4,5,5}
-	missingOnesInTwin(arr)
+	// missingOnesInTwin(arr)
+	missingOnesInTwinOptimal(arr)
+	// fmt.Println(arr[0]^arr[2]);
+}
+
+func missingOnesInTwinOptimal(arr []int){
+	x:=0
+	for i:=0; i<len(arr); i++ {
+		x=x^arr[i]
+	}
+	fmt.Println(x)
 }
 
 func missingOnesInTwin(arr []int){

@@ -31,4 +31,12 @@ public class Array5{
          }
     }
 
+    void MissingInTwiceOptimal(int[] arr){
+        int xorr=0;
+        for(int i = 0; i<arr.length; i++){
+            xorr=xorr^arr[i];
+        }
+        Console.WriteLine(xorr);
+    }
+
 }
