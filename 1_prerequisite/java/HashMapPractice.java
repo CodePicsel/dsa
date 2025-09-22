@@ -15,26 +15,25 @@ Iterate: for (Map.Entry<K,V> e : map.entrySet()) { ... }
 
 */
 
-
 class HashMapPractice{
     public static void main(String[] args){
-
+       
         //Defining HashMap...
         Map<String, Integer> map = new HashMap<>();
 
-        //Inserting elements...
+        // //Inserting elements...
         map.put("Apple", 4);
         map.put("Pineapple", 6);
 
-        //Get Calls of Hash...
+        // //Get Calls of Hash...
         System.out.println(map.get("apple")); // null
         System.out.println(map.getOrDefault("no", 42)); // 42
 
-        //Contains and count...
+        // //Contains and count...
         System.out.println(map.containsKey("banana")); //false
         System.out.println(map.containsValue(6)); //true
 
-        //Printing Style...
+        // //Printing Style...
         for (Map.Entry<String,Integer> e : map.entrySet()) System.out.println(e.getKey() + " => " + e.getValue());
 
     }

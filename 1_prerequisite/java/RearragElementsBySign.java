@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class RearragElementsBySign{
+ class RearragElementsBySign{
     public static void main(String[] args){
         int[] arr={-1, 1};
         // brute(arr);
@@ -46,3 +46,4 @@ public class RearragElementsBySign{
     }
 
 }
+
