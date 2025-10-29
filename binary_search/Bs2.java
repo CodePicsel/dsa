@@ -7,19 +7,6 @@ class Bs2{
         // brute(arr, target);
         optimal(arr, target);
     }
-    static void optimal(int[] arr, int target){
-        int answer=-1;
-        int left=0, right=arr.length-1, mid=(right+left-1)/2;
-        while(left<right){
-            if(arr[mid]==target){
-                return arr[mid];
-            }else if(arr[mid]>target){
-                right=mid-1;
-                low=0;
-                mid=(right+left-1)/2;
-            }
-        }
-    }
     static void brute(int[] arr, int target){
         int answer = -1;
         for(int i=0; i<arr.length; i++){
@@ -29,5 +16,27 @@ class Bs2{
             }
         }
         System.out.println(answer);
+    }
+    static void optimal(int[] arr, int target){
+        int answer=-1;
+        int i=0;
+        int left=0, right=arr.length-1, mid=(right+left-1)/2;
+        while(left<right){
+            System.out.println("Loop: "+i);
+            System.out.println(left);
+            System.out.println(mid);
+            System.out.println(right);
+            i++;
+            if(arr[mid]==target){
+                answer = arr[mid];
+            }else if(arr[mid]>target){
+                right=mid-1;
+                mid=(right+left-1)/2;
+            }else if(arr[mid]<target){
+                left=mid+1;
+                mid=(right+left-1)/2;
+            }
+        }
+            System.out.println(answer);
     }
 }
